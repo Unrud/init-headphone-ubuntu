@@ -1,0 +1,60 @@
+init-headphone (0.10.0-trusty) stable;
+
+  * recognize more i2c bus names
+
+ -- Unrud <unrud@openaliasbox.org>  Wed, 14 Oct 2015 09:18:29 +0200
+
+init-headphone (0.9.0-trusty) unstable;
+
+  * remove model check
+
+ -- Unrud <unrud@openaliasbox.org>  Sun, 27 Sep 2015 09:18:29 +0200
+
+init-headphone (0.8.0-trusty) unstable;
+
+  * use baseboard product name instead of system product name to identify model
+  * model communication with device after newer versions of the Windows driver
+  * add lots of supposedly supported models
+  * add ability to skip model check
+  * improved help
+  * improved logging
+
+ -- Unrud <unrud@openaliasbox.org>  Sat, 11 Jul 2015 22:54:38 +0200
+
+init-headphone (0.6.0-trusty) unstable;
+
+  * Add Eurocom M4 to supported systems
+
+ -- Unrud <unrud@openaliasbox.org>  Mon, 22 Jun 2015 21:08:40 +0200
+
+init-headphone (0.5.0-trusty) unstable;
+
+  * Add W230SD to supported systems
+
+ -- Unrud <unrud@openaliasbox.org>  Tue, 02 Jun 2015 13:59:35 +0200
+
+init-headphone (0.4.0-trusty) unstable;
+
+  * Remove dependency on python-smbus
+
+ -- Unrud <unrud@openaliasbox.org>  Sun, 10 May 2015 08:53:03 +0200
+
+init-headphone (0.3.0-trusty) unstable;
+
+  * Add mute/unmute and effects
+  * Add "Mythlogic Chaos 1313-A" and "HUMA H3" to supported products
+
+ -- Unrud <unrud@openaliasbox.org>  Sun, 26 April 2015 23:06:12 +0200
+
+init-headphone (0.2.0) unstable;
+
+  * Add Upstart script to run program on boot
+  * Make program more verbose
+
+ -- Unrud <unrud@openaliasbox.org>  Mon, 30 March 2015 14:31:41 +0200
+
+init-headphone (0.1.0) unstable;
+
+  * Initial Release.
+
+ -- Unrud <unrud@openaliasbox.org>  Sun, 29 March 2015 23:46:21 +0200

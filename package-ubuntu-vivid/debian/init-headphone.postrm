@@ -1,0 +1,18 @@
+#!/bin/sh
+
+MODULES_BLACKLIST="/etc/modprobe.d/blacklist.conf"
+
+case "${1:-}" in
+  remove)
+    if type update-grub; then
+      update-grub || true
+    fi
+
+    if [ -f "$MODULES_BLACKLIST" ]; then
+      t="$(sed "s/^#blacklist i2c_i801 # Commented out by init-headphone$/blacklist i2c_i801/" "$MODULES_BLACKLIST")"
+      echo -n "$t" >"$MODULES_BLACKLIST"
+    fi
+    ;;
+
+  *) :;;
+esac

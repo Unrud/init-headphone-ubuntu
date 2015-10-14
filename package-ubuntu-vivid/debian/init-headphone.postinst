@@ -1,0 +1,22 @@
+#!/bin/sh
+
+NOTIFIER="/usr/share/update-notifier/notify-reboot-required"
+MODULES_BLACKLIST="/etc/modprobe.d/blacklist.conf"
+
+case "${1:-}" in
+  configure|reconfigure)
+    if type update-grub; then
+      update-grub || true
+    fi
+    if [ -x "$NOTIFIER" ]; then
+      "$NOTIFIER" || true
+    fi
+
+    if [ -f "$MODULES_BLACKLIST" ]; then
+      t="$(sed "s/^blacklist i2c_i801$/#\0 # Commented out by init-headphone/" "$MODULES_BLACKLIST")"
+      echo -n "$t" >"$MODULES_BLACKLIST"
+    fi
+    ;;
+
+  *) :;;
+esac

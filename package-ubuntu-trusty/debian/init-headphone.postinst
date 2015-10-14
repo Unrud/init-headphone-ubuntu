@@ -1,0 +1,16 @@
+#!/bin/sh
+
+NOTIFIER="/usr/share/update-notifier/notify-reboot-required"
+
+case "${1:-}" in
+  configure|reconfigure)
+    if type update-grub; then
+      update-grub || true
+    fi
+    if [ -x "$NOTIFIER" ]; then
+      "$NOTIFIER" || true
+    fi
+    ;;
+
+  *) :;;
+esac

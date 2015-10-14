@@ -1,0 +1,5 @@
+src/init-headphone /usr/sbin/
+grub/* /etc/default/grub.d/
+modules-load/* /etc/modules-load.d/
+systemd/* /lib/systemd/system/
+systemd-links/* /etc/systemd/system/

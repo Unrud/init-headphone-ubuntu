@@ -1,0 +1,8 @@
+Source: init-headphone
+Maintainer: Unrud <unrud@openaliasbox.org>
+
+Package: init-headphone
+Architecture: all
+Priority: optional
+Depends: python
+Description: Manage the headphone amplifier found in some Clevo laptops
