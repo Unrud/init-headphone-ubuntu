@@ -2,6 +2,8 @@
 Manage the headphone amplifier found in some Clevo laptops.
 Can initialize the device if headphones are not working after suspend.
 
+**Ubuntu package for [init-headphone](https://github.com/Unrud/init-headphone)**
+
 ## Supported models
 ```x is used as wildcard```
 * N1xxSD
@@ -41,8 +43,6 @@ Can initialize the device if headphones are not working after suspend.
 * WA50SBQ
 * WA50SFQ
 * WA50SJQ
-
-**Ubuntu package for [init-headphone](https://github.com/Unrud/init-headphone)**
 
 ## Usage
 ```
