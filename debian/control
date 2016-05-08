@@ -1,8 +1,8 @@
 Source: init-headphone
 Maintainer: Unrud <unrud@openaliasbox.org>
+Build-Depends: debhelper (>= 9), dh-systemd
 
 Package: init-headphone
 Architecture: all
-Priority: optional
-Depends: python
+Depends: ${misc:Depends}, python:any
 Description: Manage the headphone amplifier found in some Clevo laptops

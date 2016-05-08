@@ -1,5 +1,0 @@
-src/init-headphone /usr/sbin/
-pm-sleep/* /etc/pm/sleep.d/
-grub/* /etc/default/grub.d/
-modules-load/* /etc/modules-load.d/
-init/* /etc/init/

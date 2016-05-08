@@ -1,0 +1,3 @@
+src/init-headphone /usr/sbin/
+debian/etc/grub/init-headphone.cfg /etc/default/grub.d/
+debian/etc/pm-utils/99init-headphone usr/lib/pm-utils/sleep.d/

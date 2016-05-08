@@ -1,11 +1,15 @@
 #!/bin/sh
 
-case "${1:-}" in
+set -e
+
+case "$1" in
   remove)
     if type update-grub; then
       update-grub || true
     fi
     ;;
-
-  *) :;;
 esac
+
+#DEBHELPER#
+
+exit 0

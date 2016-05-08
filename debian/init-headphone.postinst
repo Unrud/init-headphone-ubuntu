@@ -1,8 +1,10 @@
 #!/bin/sh
 
+set -e
+
 NOTIFIER="/usr/share/update-notifier/notify-reboot-required"
 
-case "${1:-}" in
+case "$1" in
   configure|reconfigure)
     if type update-grub; then
       update-grub || true
@@ -11,6 +13,8 @@ case "${1:-}" in
       "$NOTIFIER" || true
     fi
     ;;
-
-  *) :;;
 esac
+
+#DEBHELPER#
+
+exit 0

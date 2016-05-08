@@ -1,5 +1,5 @@
 [Unit]
-Description=Enable headphone jack on Clevo W230SS after suspend
+Description=Initialize headphone amplifier found in some Clevo laptops
 After=suspend.target
 After=hibernate.target
 After=hybrid-sleep.target
