@@ -1,3 +1,9 @@
+init-headphone (0.12.0) stable;
+
+  * improve logging
+
+ -- Unrud <unrud@openaliasbox.org>  Wed, 22 Mar 2017 18:38:45 +0100
+
 init-headphone (0.11.0) stable;
 
   * show error message if library not found
