@@ -1,0 +1,9 @@
+diff -Naur init-headphone-0.12/src/init-headphone init-headphone-0.12.new/src/init-headphone
+--- init-headphone-0.12.orig/src/init-headphone	2017-03-22 17:02:39.000000000 +0100
++++ init-headphone-0.12/src/init-headphone	2018-12-22 17:57:09.379719567 +0100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python3
+ 
+ #    This program is free software: you can redistribute it and/or modify
+ #    it under the terms of the GNU General Public License as published by

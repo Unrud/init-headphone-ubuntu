@@ -9,6 +9,10 @@ Go to [releases](https://github.com/Unrud/init-headphone-ubuntu/releases),
 download the package for your distribution and install it.
 
 ## Build package
-To build the package run:
 
-    dpkg-buildpackage -us -uc -b
+    # Download the source
+    wget https://github.com/Unrud/init-headphone/archive/v0.12.tar.gz -O ../init-headphone_0.12.orig.tar.gz
+    # Extract the source
+    tar xf ../init-headphone_0.12.orig.tar.gz --strip-components=1
+    # Build the package
+    debuild -us -uc
