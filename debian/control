@@ -3,7 +3,7 @@ Maintainer: Unrud <unrud@outlook.com>
 Section: misc
 Priority: optional
 Standards-Version: 4.1.4
-Build-Depends: debhelper (>= 10)
+Build-Depends: debhelper (>= 10), python3:any
 
 Package: init-headphone
 Architecture: all
