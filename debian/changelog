@@ -1,3 +1,10 @@
+init-headphone (0.14-1) bionic; urgency=low
+
+  * Use absolute path for modprobe
+  * Skip kernel parameter check for kernels >= 4.15
+
+ -- Unrud <unrud@outlook.com>  Sun, 17 May 2020 22:08:09 +0200
+
 init-headphone (0.13-1) bionic; urgency=low
 
   * Don't print stack trace when program is cancelled

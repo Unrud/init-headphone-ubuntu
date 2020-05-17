@@ -3,10 +3,10 @@ Maintainer: Unrud <unrud@outlook.com>
 Section: misc
 Priority: optional
 Standards-Version: 4.1.4
-Build-Depends: debhelper (>= 10), python3:any
+Build-Depends: debhelper (>= 10), python3:any, pkg-config, systemd, kmod
 
 Package: init-headphone
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, python3:any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python3:any, kmod
 Description: Manage the headphone amplifier found in some Clevo laptops
  Can initialize the device if headphones are not working after suspend.
